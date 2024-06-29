@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+nav {
+    background-color: green;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "burger logo shop"
+    "menu menu menu";
+    padding: 0.5rem 0;
+}
+
+#burger-button {grid-area: burger}
+h1 {grid-area: logo}
+.shopping-cart {grid-area: shop}
+#menu {grid-area: menu}
+
+#burger-button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+    #burger-button div{
+        background-color: black;
+        width: 30px;
+        height: 7px;
+        border-radius: 3px;
+    }
+
+#menu {
+    justify-self: stretch;
+    display: none;
+    padding-top: 0.5rem;
+}
+    .item-list {
+        background-color: green;
+    }
+    .item-list li {
+        text-align: center;
+    }
+
+    .item-list a {
+        display: inline-block;
+        padding: 1rem;
+        font-size: 22px;
+        width: 100%;
+        color: inherit;
+        text-decoration: none;
+    }
+    .item-list a:hover {
+        background-color: violet;
+    }
