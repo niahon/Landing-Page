@@ -9,98 +9,126 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div id="burger-button">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <h1>Insert logo name</h1>
-            <img alt="shopping-cart-icon" src="img/" class="shopping-cart">
-            <div id="menu">
-                <ul class="item-list">
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                    <li><a href="">Item</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="flex-wrapper">
+            <nav>
+                <div id="burger-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1>Insert logo name</h1>
+                <img alt="shopping-cart-icon" src="img/" class="shopping-cart">
+                <div id="menu">
+                    <ul class="item-list">
+                        <li><a href="">Item</a></li>
+                        <li><a href="">Item</a></li>
+                        <li><a href="">Item</a></li>
+                        <li><a href="">Item</a></li>
+                        <li><a href="">Item</a></li>
+                        <li><a href="">Item</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="product-info">
             <h2>Lorem ipsum dolor sit amet.</h2>
-            <img alt="product-img-1" src="img/">
+            <img alt="product-img-1" src="img/placeholder.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio cum fugit quos deserunt cumque repellendus voluptates est maxime illo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure doloremque nesciunt aliquam soluta neque, eaque excepturi aliquid deserunt nam molestias! Eveniet sint assumenda provident sapiente quos culpa delectus numquam.</p>
+        </div>
+        <div class="product-info">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <img alt="product-img-1" src="img/placeholder.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio cum fugit quos deserunt cumque repellendus voluptates est maxime illo!</p>
         </div>
         <div class="product-info">
             <h2>Lorem ipsum dolor sit amet.</h2>
-            <img alt="product-img-1" src="img/">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio cum fugit quos deserunt cumque repellendus voluptates est maxime illo!</p>
+            <img alt="product-img-1" src="img/placeholder.png">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolore obcaecati aspernatur fuga voluptatum quisquam ea odio quae enim suscipit, voluptatibus accusamus sit deleniti voluptatem accusantium distinctio ab quod, voluptates quaerat! Aliquam!</p>
         </div>
         <div class="customer-thoughts">
             <h2>Customer Thoughts</h2>
-            <div class="carrousel">
-                <div class="customer-review">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem beatae adipisci distinctio, ipsum sunt consequuntur architecto aperiam maiores! Fugit consequatur a sit voluptate sunt qui!</p>
-                    <p class="small">Lorem ipsum dolor sit.</p>
+            <div class="carousel-container">
+                <button class="arrow left">
+                    <div></div>
+                </button>
+                <div id="carousel">
+                    <div class="customer-review">
+                        <p>Lorem dasdsadasd, dolor sit amet consectetur adipisicing elit. Voluptatem beatae adipisci distinctio, ipsum sunt consequuntur architecto aperiam maiores! Fugit consequatur a sit voluptate sunt qui!</p>
+                        <p class="small">Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="customer-review">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem beatae adipisci distinctio, ipsum sunt consequuntur architecto aperiam maiores! Fugit consequatur a sit voluptate sunt qui!</p>
+                        <p class="small">Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="customer-review">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem beatae adipisci distinctio, ipsum sunt consequuntur architecto aperiam maiores! Fugit consequatur a sit voluptate sunt qui!</p>
+                        <p class="small">Lorem ipsum dolor sit.</p>
+                    </div>
                 </div>
-                <div class="customer-review">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem beatae adipisci distinctio, ipsum sunt consequuntur architecto aperiam maiores! Fugit consequatur a sit voluptate sunt qui!</p>
-                    <p class="small">Lorem ipsum dolor sit.</p>
-                </div>
-                <div class="customer-review">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem beatae adipisci distinctio, ipsum sunt consequuntur architecto aperiam maiores! Fugit consequatur a sit voluptate sunt qui!</p>
-                    <p class="small">Lorem ipsum dolor sit.</p>
-                </div>
+                <button class="arrow right">
+                    <div></div>
+                </button>
             </div>
         </div>
         <div class="loyal-companies">
-            <h2>Trusted by companies</h2>
-            <div class="company-container">
-                <h3>Logo</h3>
-                <h3>Logo</h3>
-                <h3>Logo</h3>
-                <h3>Logo</h3>
-                <h3>Logo</h3>
-                <h3>Logo</h3>
-                <h3>Logo</h3>
-                <h3>Logo</h3>
+            <div class="company-wrapper">
+                <h2>Trusted by companies</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas blanditiis veniam tempore, similique nulla officia iure soluta.</p>
+                <div class="company-logos">
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                    <h3>Logo</h3>
+                </div>
             </div>
         </div>
         <div class="plans">
-            <div class="carrousel">
+            <h2>Plans</h2>
+            <div class="plans-flex">
                 <div class="plan">
-                    <h3>Basic</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="plan-content">
+                        <h3>Basic</h3>
+                        <ul>
+                            <li><span class="bull-control">Lorem ipsum dolor sit amet consectetur.</span></li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                        </ul>
+                    </div>
+                    <button class="purchase">Purchase</button>
+                </div>
+                <div class="plan mid">
+                    <div class="plan-content">
+                        <h3>Standard</h3>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                        </ul>     
+                    </div>
                     <button class="purchase">Purchase</button>
                 </div>
                 <div class="plan">
-                    <h3>Standard</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <button class="purchase">Purchase</button>
-                </div>
-                <div class="plan">
-                    <h3>Premium</h3>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="plan-content">
+                        <h3>Premium</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        </ul>       
+                    </div>
                     <button class="purchase">Purchase</button>
                 </div>
             </div>
         </div>
+
         <div class="more-products">
             <h2>Interested in more?</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptates provident sint. Deserunt recusandae veniam reiciendis saepe omnis, nostrum in quasi possimus voluptatem ut, sequi unde ad consectetur ratione eos.</p>
@@ -108,35 +136,34 @@
         </div>
     </main>
     <footer>
-        <div class="bottom-column">
-            <h3>Lorem</h3>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-        <div class="bottom-column">
-            <h3>Lorem</h3>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-        <div class="bottom-column">
-            <h3>Lorem</h3>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+        <div class="footer-container">
+            <div class="footer-list">
+                <h4>Lorem</h4>
+                <ul>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Fugiat, illo!</a></li>
+                    <li><a href="">Quas, neque.</a></li>
+                    <li><a href="">Iste, quis?</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h4>Lorem</h4>
+                <ul>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Nobis, corporis.</a></li>
+                    <li><a href="">Porro, molestias?</a></li>
+                    <li><a href="">Accusamus, repellendus!</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h4>Lorem</h4>
+                <ul>
+                    <li><a href="">Lorem, ipsum.</a></li>
+                    <li><a href="">Placeat, fugit!</a></li>
+                    <li><a href="">Ducimus, asperiores.</a></li>
+                    <li><a href="">Quia, doloribus!</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

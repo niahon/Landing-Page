@@ -1,3 +1,12 @@
+:root {
+    --text-color: #f5f8fa;
+    --background-color: #05080a;
+    --alt-background-color: #1a252c;
+    --primary-color: #4d7eb3;
+    --secondary-color: #3f2b64;
+    --accent-color: #613681;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -10,10 +19,30 @@ html {
     padding: 0;
 }
 
+/* GENERAL */
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+button {
+    height: 2rem;
+    align-self: center;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+button:active {
+    background-color: var(--accent-color);
+}
+
 /* Header */
 
 nav {
-    background-color: green;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -22,8 +51,8 @@ nav {
     grid-template-areas: 
     "burger logo shop"
     "menu menu menu";
-    padding: 0.5rem 0;
 }
+    
 
 #burger-button {grid-area: burger}
 h1 {grid-area: logo}
@@ -34,9 +63,10 @@ h1 {grid-area: logo}
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding: 0.5rem 0;
 }
     #burger-button div{
-        background-color: black;
+        background-color: white;
         width: 30px;
         height: 7px;
         border-radius: 3px;
@@ -45,11 +75,7 @@ h1 {grid-area: logo}
 #menu {
     justify-self: stretch;
     display: none;
-    padding-top: 0.5rem;
 }
-    .item-list {
-        background-color: green;
-    }
     .item-list li {
         text-align: center;
     }
@@ -57,11 +83,167 @@ h1 {grid-area: logo}
     .item-list a {
         display: inline-block;
         padding: 1rem;
-        font-size: 22px;
+        font-size: 24px;
         width: 100%;
-        color: inherit;
+        color: var(--text-color);
         text-decoration: none;
     }
-    .item-list a:hover {
-        background-color: violet;
+
+/* Main */
+
+main {
+    text-align: center;
+}
+    main > div {
+        padding: 3rem 0;
     }
+
+h2 {
+    font-size: 34px;
+}
+
+p {
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+main img {
+    margin-top: 1rem;
+}
+
+.product-info:nth-of-type(1), 
+.product-info:nth-of-type(3), 
+.loyal-companies, 
+.more-products {
+    background-color: var(--alt-background-color);
+}
+
+
+.customer-thoughts {
+    font-size: 18px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    touch-action: pan-x;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.arrow div {
+    width: 40%;
+    height: 40%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    pointer-events: none;
+}
+
+.arrow.left div {
+    margin: 0 0.9rem;
+    rotate: 225deg;
+}
+
+.arrow.right div {
+    margin: 0 0.6rem;
+    rotate: 45deg;
+}
+
+#carousel {
+    margin: 1rem 1.5rem;
+    width: 25rem;
+    height: 15rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; 
+    scrollbar-width: none;
+}
+
+#carousel::webkit-scrollbar {
+    display: none;
+} 
+
+.customer-review {
+    min-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    scroll-snap-align: center;
+}
+
+.company-wrapper {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+    .company-logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+.plans-flex {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+    .plan {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.25rem 2rem;
+    }
+        .plan h3 {
+            margin-bottom: 1rem;
+        }
+
+        .plan ul {
+            margin-bottom: 3rem;
+            text-align: start;
+            list-style-position: inside;
+        }
+            .plan li {
+                margin-bottom: 0.5rem;
+            }
+        .plan.mid {
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+            
+        .plan .purchase {
+            width: 60%;
+        }
+
+.explore {
+    width: 20%;
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem 1.5rem;
+}
+
+.footer-list *{
+    margin-bottom: 0.5rem;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container a {
+    color: inherit;
+    text-decoration: none;
+}
