@@ -40,6 +40,14 @@ button:active {
     background-color: var(--accent-color);
 }
 
+h1 {
+    color: var(--primary-color);
+}
+
+h2 { 
+    color: var(--primary-color);
+}
+
 /* Header */
 
 nav {
@@ -66,11 +74,15 @@ h1 {grid-area: logo}
     padding: 0.5rem 0;
 }
     #burger-button div{
-        background-color: white;
+        background-color: var(--primary-color);
         width: 30px;
         height: 7px;
         border-radius: 3px;
     }
+
+#cart-icon {
+    max-width: 48px;
+}
 
 #menu {
     justify-self: stretch;
@@ -111,11 +123,24 @@ main img {
     margin-top: 1rem;
 }
 
+
+
 .product-info:nth-of-type(1), 
 .product-info:nth-of-type(3), 
 .loyal-companies, 
 .more-products {
     background-color: var(--alt-background-color);
+}
+
+
+.product-info:nth-of-type(1) h2, 
+.product-info:nth-of-type(3) h2, 
+.more-products h2 {
+    color: inherit;
+}
+
+.loyal-companies h2 {
+    color: black;
 }
 
 
@@ -186,10 +211,14 @@ main img {
     .company-logos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
         margin-top: 3rem;
+        justify-items: center;
+        align-items: center;
     }
-
+        .company-logos img {
+            max-width: 75%;
+        }
+        
 .plans-flex {
     display: flex;
     justify-content: center;
@@ -205,6 +234,9 @@ main img {
         .plan h3 {
             margin-bottom: 1rem;
         }
+            .plan h3#premium-plan {
+                color: yellow
+            }
 
         .plan ul {
             margin-bottom: 3rem;
